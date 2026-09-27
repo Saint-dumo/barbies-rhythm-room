@@ -1,0 +1,164 @@
+.gallery {
+  min-height: 100vh;
+  background: #f4efe7;
+  color: #101010;
+  padding: 120px 5vw;
+}
+
+.gallery-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.gallery-header h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 0.82;
+  letter-spacing: -0.035em;
+}
+
+.gallery-header h2 em {
+  color: #d94b2b;
+  font-style: normal;
+}
+
+.gallery-header > p {
+  font-size: 0.72rem;
+  line-height: 1.7;
+  color: #68615a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr 1fr;
+  grid-template-rows: 280px 280px;
+  gap: 16px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #171414;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+/* LARGE PORTRAIT */
+
+.gallery-item-large {
+  grid-row: span 2;
+}
+
+.gallery-item-large img {
+  object-position: center;
+}
+
+/* TOP IMAGE */
+
+.gallery-item-top {
+  grid-column: span 2;
+}
+
+.gallery-item-top img {
+  object-position: center 35%;
+}
+
+/* SIDE IMAGE */
+
+.gallery-item-side img {
+  object-position: center;
+}
+
+/* BOTTOM IMAGE */
+
+.gallery-item-bottom {
+  grid-column: span 2;
+}
+
+.gallery-item-bottom img {
+  object-position: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .gallery {
+    padding: 90px 6vw;
+  }
+
+  .gallery-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 380px 260px 260px;
+  }
+
+  .gallery-item-large {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .gallery-item-top {
+    grid-column: span 1;
+  }
+
+  .gallery-item-side {
+    grid-column: span 1;
+  }
+
+  .gallery-item-bottom {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    padding: 80px 6vw;
+  }
+
+  .gallery-header {
+    margin-bottom: 50px;
+  }
+
+  .gallery-header h2 {
+    font-size: 4rem;
+  }
+
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .gallery-item {
+    height: 320px;
+    border-radius: 20px;
+  }
+
+  .gallery-item-large {
+    height: 450px;
+  }
+}
