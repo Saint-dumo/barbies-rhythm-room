@@ -1,0 +1,463 @@
+.booking {
+  min-height: 100vh;
+
+  background: #f4efe7;
+  color: #101010;
+
+  padding: 140px 5vw 80px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(500px, 1.1fr);
+
+  gap: 7vw;
+  align-items: start;
+}
+
+/* HEADER / LEFT SIDE */
+
+.booking-header {
+  max-width: 620px;
+
+  position: sticky;
+  top: 120px;
+}
+
+.booking-header .section-label {
+  display: block;
+}
+
+.booking-header h2 {
+  margin-top: 25px;
+
+  font-family: 'Anton', sans-serif;
+
+  font-size: clamp(5rem, 8vw, 8rem);
+
+  line-height: 0.82;
+  letter-spacing: -0.035em;
+}
+
+.booking-header h2 em {
+  color: var(--pink);
+  font-style: normal;
+}
+
+.booking-header p {
+  max-width: 430px;
+
+  margin-top: 35px;
+
+  font-size: 0.8rem;
+  line-height: 1.8;
+
+  color: #625c55;
+}
+
+/* EVENT INFO */
+
+.booking-header::after {
+  content:
+    "OCTOBER 24, 2026  •  7:00 PM\A"
+    "AFROBEATS  •  AMAPIANO  •  ENERGY";
+
+  display: block;
+
+  white-space: pre;
+
+  margin-top: 55px;
+
+  font-size: 0.58rem;
+  font-weight: 700;
+  line-height: 2;
+
+  letter-spacing: 0.12em;
+
+  color: #101010;
+}
+
+/* FORM / RIGHT SIDE */
+
+.booking-form {
+  width: 100%;
+
+  padding: 40px;
+
+  background: #ffffff;
+
+  border-radius: 28px;
+
+  box-shadow: 0 20px 60px rgba(16, 16, 16, 0.06);
+}
+
+/* SECTIONS */
+
+.booking-section {
+  display: grid;
+
+  grid-template-columns: 45px 1fr;
+
+  padding: 35px 0;
+
+  border-top: 1px solid rgba(16, 16, 16, 0.12);
+}
+
+.booking-section:first-child {
+  border-top: 0;
+
+  padding-top: 0;
+}
+
+.booking-step {
+  font-size: 0.58rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+
+  color: var(--pink);
+}
+
+.booking-section-content h3 {
+  margin-bottom: 22px;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+}
+
+/* TICKETS */
+
+.ticket-options {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+
+  width: 100%;
+}
+
+.ticket-option {
+  min-height: 115px;
+
+  padding: 22px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  border: 1px solid rgba(16, 16, 16, 0.18);
+
+  border-radius: 18px;
+
+  background: #f4efe7;
+
+  color: #101010;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.ticket-option:hover {
+  transform: translateY(-2px);
+}
+
+.ticket-option-active {
+  background: #101010;
+
+  border-color: #101010;
+
+  color: #f4efe7;
+}
+
+.ticket-option span {
+  font-size: 0.62rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+.ticket-option strong {
+  font-family: 'Anton', sans-serif;
+
+  font-size: 2.8rem;
+
+  line-height: 0.8;
+
+  color: var(--pink);
+}
+
+/* QUANTITY */
+
+.quantity-control {
+  width: fit-content;
+
+  display: flex;
+
+  align-items: center;
+
+  border: 1px solid rgba(16, 16, 16, 0.18);
+
+  border-radius: 999px;
+
+  overflow: hidden;
+}
+
+.quantity-control button {
+  width: 52px;
+
+  height: 52px;
+
+  background: transparent;
+
+  color: #101010;
+
+  font-size: 1.1rem;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.quantity-control button:hover {
+  background: #101010;
+
+  color: #f4efe7;
+}
+
+.quantity-control strong {
+  min-width: 55px;
+
+  text-align: center;
+
+  font-size: 0.85rem;
+}
+
+/* FORM FIELDS */
+
+.booking-fields {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+
+  width: 100%;
+}
+
+.booking-fields input {
+  width: 100%;
+
+  padding: 17px 0;
+
+  border: 0;
+
+  border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+
+  outline: none;
+
+  background: transparent;
+
+  color: #101010;
+
+  font-size: 0.75rem;
+}
+
+.booking-fields input::placeholder {
+  color: #817a72;
+}
+
+.booking-fields input:focus {
+  border-color: var(--pink);
+}
+
+/* SUMMARY */
+
+.booking-summary {
+  margin-top: 10px;
+
+  padding: 28px 0;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-top: 1px solid rgba(16, 16, 16, 0.12);
+
+  border-bottom: 1px solid rgba(16, 16, 16, 0.12);
+}
+
+.booking-summary div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.booking-summary span {
+  font-size: 0.52rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+
+  color: #817a72;
+}
+
+.booking-summary strong {
+  font-size: 0.8rem;
+}
+
+.booking-summary div:last-child {
+  align-items: flex-end;
+}
+
+.booking-summary div:last-child strong {
+  font-family: 'Anton', sans-serif;
+
+  font-size: 3.2rem;
+
+  line-height: 0.8;
+
+  color: var(--pink);
+}
+
+/* PAYMENT BUTTON */
+
+.booking-submit {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 18px 28px;
+
+  border-radius: 999px;
+
+  background: var(--pink);
+
+  color: #ffffff;
+
+  font-size: 0.62rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.booking-submit:hover {
+  background: #101010;
+
+  transform: translateY(-2px);
+}
+
+.booking-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.booking-error {
+  margin-top: 18px;
+  color: #c62828;
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .booking {
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+
+    padding: 130px 6vw 70px;
+  }
+
+  .booking-header {
+    position: static;
+
+    max-width: 700px;
+  }
+
+  .booking-header h2 {
+    font-size: clamp(5rem, 13vw, 8rem);
+  }
+
+  .booking-form {
+    max-width: 800px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .booking {
+    padding: 100px 6vw 60px;
+
+    gap: 50px;
+  }
+
+  .booking-header h2 {
+    font-size: 4.3rem;
+  }
+
+  .booking-header p {
+    margin-top: 28px;
+  }
+
+  .booking-header::after {
+    margin-top: 35px;
+  }
+
+  .booking-form {
+    padding: 25px 20px;
+
+    border-radius: 22px;
+  }
+
+  .booking-section {
+    grid-template-columns: 38px 1fr;
+
+    padding: 30px 0;
+  }
+
+  .ticket-options {
+    grid-template-columns: 1fr;
+  }
+
+  .ticket-option {
+    min-height: 105px;
+  }
+
+  .booking-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-summary div:last-child strong {
+    font-size: 2.8rem;
+  }
+}

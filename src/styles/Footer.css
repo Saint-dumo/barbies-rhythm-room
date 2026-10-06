@@ -27,7 +27,7 @@
 }
 
 .footer-brand span:last-child {
-  color: #d94b2b;
+  color: var(--pink);
 }
 
 .footer-top p {
@@ -60,7 +60,7 @@
 
   letter-spacing: 0.18em;
 
-  color: #d94b2b;
+  color: var(--pink);
 }
 
 .footer-heading h2 {
@@ -73,7 +73,7 @@
 }
 
 .footer-heading h2 em {
-  color: #d94b2b;
+  color: var(--pink);
   font-style: normal;
 }
 
@@ -143,7 +143,7 @@
 }
 
 .social-link:hover {
-  color: #d94b2b;
+  color: var(--pink);
   transform: translateX(5px);
 }
 
@@ -179,7 +179,7 @@
 
 .footer-links a:hover,
 .footer-top-link:hover {
-  color: #d94b2b;
+  color: var(--pink);
 }
 
 .footer-top-link {

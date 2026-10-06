@@ -20,7 +20,7 @@
 }
 
 .gallery-header h2 em {
-  color: #d94b2b;
+  color: var(--pink);
   font-style: normal;
 }
 

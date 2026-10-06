@@ -12,7 +12,7 @@
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #d94b2b;
+  color: var(--pink);
 }
 
 .experience-heading h2 {
@@ -24,7 +24,7 @@
 }
 
 .experience-heading h2 em {
-  color: #d94b2b;
+  color: var(--pink);
   font-style: normal;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .experience-link:hover {
-  background: #d94b2b;
+  background: var(--pink);
   transform: translateY(-3px);
 }
 

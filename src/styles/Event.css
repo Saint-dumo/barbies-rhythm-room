@@ -22,7 +22,7 @@
 }
 
 .event-header h2 em {
-  color: #d94b2b;
+  color: var(--pink);
   font-style: normal;
 }
 
@@ -57,7 +57,7 @@
 
   letter-spacing: 0.18em;
 
-  color: #d94b2b;
+  color: var(--pink);
 }
 
 .event-date strong {
@@ -155,7 +155,7 @@
 
   line-height: 0.8;
 
-  color: #d94b2b;
+  color: var(--pink);
 }
 
 /* COUNTDOWN */
@@ -179,7 +179,7 @@
 
   letter-spacing: 0.18em;
 
-  color: #d94b2b;
+  color: var(--pink);
 }
 
 .countdown-grid {
@@ -252,7 +252,7 @@
 
   border-radius: 999px;
 
-  background: #d94b2b;
+  background: var(--pink);
   color: #fff;
 
   text-decoration: none;
@@ -269,7 +269,7 @@
 }
 
 .event-book-button:hover {
-  background: #f05a35;
+  background: var(--pink-light);
 
   transform: translateY(-3px);
 }

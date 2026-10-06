@@ -49,7 +49,7 @@ function Event() {
   }, [])
 
   return (
-    <section className="event" id="booking">
+    <section className="event" id="event">
       <div className="event-header">
         <span className="section-label">NEXT SESSION</span>
 
@@ -143,7 +143,7 @@ function Event() {
           Everyone is welcome in the room.
         </p>
 
-        <a href="#booking" className="event-book-button">
+        <a href="/booking" className="event-book-button">
           Book Your Spot
         </a>
       </div>

@@ -22,7 +22,7 @@ function Hero() {
           <em>RHYTHM.</em>
         </div>
 
-        <a href="#booking" className="hero-button">
+        <a href="/booking" className="hero-button">
           Book Your Spot
         </a>
       </div>
