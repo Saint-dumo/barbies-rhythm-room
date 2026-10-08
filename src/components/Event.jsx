@@ -10,7 +10,7 @@ function Event() {
   })
 
   useEffect(() => {
-    const targetDate = new Date('2026-10-24T19:00:00')
+    const targetDate = new Date('2026-10-22T16:00:00')
 
     const updateCountdown = () => {
       const now = new Date()
@@ -64,7 +64,7 @@ function Event() {
         <div className="event-date">
           <span>OCTOBER</span>
 
-          <strong>24</strong>
+          <strong>22</strong>
 
           <span>2026</span>
         </div>
@@ -72,12 +72,12 @@ function Event() {
         <div className="event-details">
           <div className="event-detail">
             <span>TIME</span>
-            <strong>7:00 PM</strong>
+            <strong>4:00 PM</strong>
           </div>
 
           <div className="event-detail">
             <span>LOCATION</span>
-            <strong>CANADA</strong>
+            <strong>VENUE TBA</strong>
           </div>
 
           <div className="event-detail">
@@ -87,7 +87,7 @@ function Event() {
 
           <div className="event-detail">
             <span>INSTRUCTOR</span>
-            <strong>AFRICAN BARBIE</strong>
+            <strong>FAVOUR</strong>
           </div>
         </div>
 

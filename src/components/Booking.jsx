@@ -134,7 +134,7 @@ function Booking() {
                   {ticketLabels[ticketType]} × {quantity}
                 </span>
 
-                <strong>October 24, 2026</strong>
+                <strong>October 22, 2026</strong>
               </div>
 
               <div>
