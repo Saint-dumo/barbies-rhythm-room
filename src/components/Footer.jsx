@@ -1,4 +1,5 @@
 import '../styles/Footer.css'
+import logo from '../assets/barbiesroomlogo.png'
 
 function InstagramIcon() {
   return (
@@ -29,11 +30,14 @@ function TikTokIcon() {
 function Footer() {
   return (
     <footer className="footer">
+
       <div className="footer-top">
-        <div className="footer-brand">
-          <span>BARBIE'S</span>
-          <span>RHYTHM ROOM</span>
-        </div>
+        <a href="/" className="footer-brand">
+          <img
+            src={logo}
+            alt="Barbie's Rhythm Room"
+          />
+        </a>
 
         <p>
           MOVE.
@@ -45,6 +49,7 @@ function Footer() {
       </div>
 
       <div className="footer-main">
+
         <div className="footer-heading">
           <span>READY TO MOVE?</span>
 
@@ -56,42 +61,62 @@ function Footer() {
         </div>
 
         <div className="footer-socials">
+
           <span className="footer-social-label">
             FOLLOW THE RHYTHM
           </span>
 
-          <a href="#" className="social-link">
+          <a
+            href="https://tr.ee/ukvLks8Wsv"
+            className="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <InstagramIcon />
             <span>Instagram</span>
           </a>
 
-          <a href="#" className="social-link">
+          <a
+            href="https://www.snapchat.com/@africanbarbie_j?sender_web_id=4bf1a279-ad12-445e-b5db-100a857d52dc&device_type=android&is_copy_url=true"
+            className="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <SnapchatIcon />
             <span>Snapchat</span>
           </a>
 
-          <a href="#" className="social-link">
+          <a
+            href="https://tr.ee/A5o8yfpraq"
+            className="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <TikTokIcon />
             <span>TikTok</span>
           </a>
+
         </div>
       </div>
 
       <div className="footer-bottom">
+
         <span>
           © 2026 BARBIE'S RHYTHM ROOM
         </span>
 
         <div className="footer-links">
-          <a href="#experience">Experience</a>
-          <a href="#about">About</a>
-          <a href="#faq">FAQ</a>
+          <a href="/#about">About</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/#faq">FAQ</a>
         </div>
 
         <a href="#top" className="footer-top-link">
           BACK TO TOP ↑
         </a>
+
       </div>
+
     </footer>
   )
 }

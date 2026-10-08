@@ -1,71 +1,91 @@
 import '../styles/Instructor.css'
+
 import africanBarbieImage from '../assets/african-barbie.jpg'
 import favourImage from '../assets/favour.jpg'
 
 function Instructor() {
   return (
-    <section className="instructor" id="about">
-      <div className="instructor-person">
-        <div className="instructor-image">
-          <div className="instructor-placeholder">
+    <section className="instructor">
+
+      <div className="instructor-heading">
+        <span className="section-label">MEET THE PEOPLE</span>
+
+        <h2>
+          THE PEOPLE
+          <br />
+          BEHIND THE
+          <br />
+          <em>ROOM.</em>
+        </h2>
+      </div>
+
+      <div className="instructor-grid">
+
+        {/* AFRICAN BARBIE */}
+
+        <article className="instructor-card">
+
+          <div className="instructor-image">
             <img
               src={africanBarbieImage}
               alt="African Barbie"
             />
           </div>
-        </div>
 
-        <div className="instructor-content">
-          <span className="section-label">MEET THE HOST</span>
+          <div className="instructor-content">
 
-          <h2>
-            AFRICAN
-            <br />
-            <em>BARBIE.</em>
-          </h2>
+            <h3>AFRICAN BARBIE</h3>
 
-          <p className="instructor-intro">
-            The host and face behind Barbie's Rhythm Room.
-          </p>
+            <span className="instructor-styles">
+              HOST • CREATIVE DIRECTOR
+            </span>
 
-          <p>
-            African Barbie brings the energy, community and
-            personality that make the room what it is.
-          </p>
+            <p>
+              The host and face behind Barbie's Rhythm Room.
+              African Barbie brings the energy, personality
+              and community that make the room what it is.
+            </p>
 
-          <a href="/contact" className="instructor-link">
-            Meet the Host
-          </a>
-        </div>
-      </div>
+          </div>
 
-      <div className="instructor-person">
-        <div className="instructor-image">
-          <div className="instructor-placeholder">
+        </article>
+
+        {/* FAVOUR */}
+
+        <article className="instructor-card">
+
+          <div className="instructor-image">
             <img
               src={favourImage}
               alt="Favour, dance instructor"
             />
           </div>
-        </div>
 
-        <div className="instructor-content">
-          <span className="section-label">MEET THE INSTRUCTOR</span>
+          <div className="instructor-content">
 
-          <h2>
-            <em>FAVOUR.</em>
-          </h2>
+            <h3>FAVOUR</h3>
 
-          <p className="instructor-intro">
-            Bringing movement, rhythm and energy into the room.
-          </p>
+            <span className="instructor-styles">
+              AFROBEATS • AMAPIANO • ENERGY
+            </span>
 
-          <p>
-            Favour leads the class and creates an environment
-            where everyone can move, learn and express themselves.
-          </p>
-        </div>
+            <p>
+              Favour leads the class, bringing movement,
+              rhythm and energy into the room while creating
+              an environment where everyone can learn,
+              connect and express themselves.
+            </p>
+
+            <a href="/gallery" className="instructor-link">
+              See Favour in Motion
+            </a>
+
+          </div>
+
+        </article>
+
       </div>
+
     </section>
   )
 }

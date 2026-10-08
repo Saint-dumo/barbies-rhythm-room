@@ -16,18 +16,21 @@
   border-bottom: 1px solid rgba(16, 16, 16, 0.15);
 }
 
-.footer-brand {
-  display: flex;
-  flex-direction: column;
+/* LOGO */
 
-  font-family: 'Anton', sans-serif;
-  font-size: 1.3rem;
-  line-height: 0.85;
-  letter-spacing: -0.03em;
+.footer-brand {
+  display: block;
+  width: 150px;
+
+  text-decoration: none;
 }
 
-.footer-brand span:last-child {
-  color: var(--pink);
+.footer-brand img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+  object-fit: contain;
 }
 
 .footer-top p {
@@ -193,6 +196,10 @@
     padding: 70px 6vw 25px;
   }
 
+  .footer-brand {
+    width: 130px;
+  }
+
   .footer-main {
     min-height: 500px;
 
@@ -232,6 +239,10 @@
 @media (max-width: 500px) {
   .footer-top {
     padding-bottom: 50px;
+  }
+
+  .footer-brand {
+    width: 115px;
   }
 
   .footer-top p {

@@ -24,12 +24,44 @@
   font-style: normal;
 }
 
-.gallery-header > p {
+.gallery-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 28px;
+}
+
+.gallery-intro p {
   font-size: 0.72rem;
   line-height: 1.7;
   color: #68615a;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  text-align: right;
+}
+
+.gallery-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: #101010;
+  color: #f4efe7;
+  text-decoration: none;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.gallery-link:hover {
+  background: var(--pink);
+  transform: translateY(-3px);
 }
 
 /* GALLERY */
@@ -52,9 +84,7 @@
   width: 100%;
   height: 100%;
   display: block;
-
   object-fit: cover;
-
   transition: transform 0.7s ease;
 }
 
@@ -62,7 +92,7 @@
   transform: scale(1.04);
 }
 
-/* LARGE PORTRAIT */
+/* LARGE IMAGE */
 
 .gallery-item-large {
   grid-row: span 2;
@@ -84,17 +114,12 @@
 
 /* SIDE IMAGE */
 
+.gallery-item-side {
+  grid-column: 3;
+  grid-row: 2;
+}
+
 .gallery-item-side img {
-  object-position: center;
-}
-
-/* BOTTOM IMAGE */
-
-.gallery-item-bottom {
-  grid-column: span 2;
-}
-
-.gallery-item-bottom img {
   object-position: center;
 }
 
@@ -111,9 +136,17 @@
     gap: 30px;
   }
 
+  .gallery-intro {
+    align-items: flex-start;
+  }
+
+  .gallery-intro p {
+    text-align: left;
+  }
+
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 380px 260px 260px;
+    grid-template-rows: 380px 260px;
   }
 
   .gallery-item-large {
@@ -127,10 +160,7 @@
 
   .gallery-item-side {
     grid-column: span 1;
-  }
-
-  .gallery-item-bottom {
-    grid-column: span 2;
+    grid-row: auto;
   }
 }
 
@@ -145,6 +175,15 @@
 
   .gallery-header h2 {
     font-size: 4rem;
+  }
+
+  .gallery-intro {
+    width: 100%;
+    gap: 22px;
+  }
+
+  .gallery-link {
+    width: 100%;
   }
 
   .gallery-grid {
