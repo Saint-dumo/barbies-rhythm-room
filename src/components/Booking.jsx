@@ -15,10 +15,10 @@ function Booking() {
     adult: 'Ages 15+',
   }
 
-  const paymentLinks = {
-    child: 'https://buy.stripe.com/test_bJe8wQ82PcsG8l09QQ2Fa00',
-    adult: 'https://buy.stripe.com/test_aFa28serd64i0Syd322Fa01',
-  }
+const paymentLinks = {
+  child: 'https://buy.stripe.com/bJe8wQ82PcsG8l09QQ2Fa00',
+  adult: 'https://buy.stripe.com/aFa28serd64i0Syd322Fa01',
+}
 
   const total = ticketPrices[ticketType] * quantity
 
