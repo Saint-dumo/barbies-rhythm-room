@@ -67,7 +67,7 @@ function Footer() {
           </span>
 
           <a
-            href="https://tr.ee/ukvLks8Wsv"
+            href="https://www.instagram.com/barbie_rhythm_room?rpxt=aDM3c3Znem10OWpz"
             className="social-link"
             target="_blank"
             rel="noopener noreferrer"

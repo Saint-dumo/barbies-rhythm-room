@@ -6,6 +6,10 @@ import favourVideo02 from '../assets/favourdance1.mp4'
 import favourVideo03 from '../assets/favourdance2.mp4'
 import favourVideo04 from '../assets/favourdance3.mp4'
 
+import donFlexxVideo01 from '../assets/don-flexx-01.mp4'
+import donFlexxVideo02 from '../assets/don-flexx-02.mp4'
+import donFlexxVideo03 from '../assets/don-flexx-03.mp4'
+
 import dance01 from '../assets/barbie-dance-01.jpg'
 import dance02 from '../assets/barbie-dance-02.jpg'
 import dance03 from '../assets/barbie-dance-03.jpg'
@@ -20,7 +24,6 @@ function GalleryPage() {
         {/* HERO */}
 
         <section className="gallery-page-hero">
-
           <div className="gallery-page-heading">
             <span className="section-label">THE GALLERY</span>
 
@@ -35,14 +38,11 @@ function GalleryPage() {
               Barbie's Rhythm Room.
             </p>
           </div>
-
         </section>
-
 
         {/* FAVOUR IN MOTION */}
 
         <section className="favour-motion">
-
           <div className="gallery-section-heading">
             <div>
               <span className="section-label">MEET FAVOUR</span>
@@ -55,9 +55,7 @@ function GalleryPage() {
             </div>
           </div>
 
-
           <div className="favour-feature">
-
             <div className="favour-feature-video">
               <video
                 src={favourMain}
@@ -69,12 +67,9 @@ function GalleryPage() {
                 preload="metadata"
               />
             </div>
-
           </div>
 
-
           <div className="favour-video-grid">
-
             <div className="motion-video">
               <video
                 src={favourVideo02}
@@ -107,16 +102,69 @@ function GalleryPage() {
                 preload="metadata"
               />
             </div>
-
           </div>
-
         </section>
 
+        {/* DON FLEXX IN MOTION */}
+
+        <section className="favour-motion don-flexx-motion">
+          <div className="gallery-section-heading">
+            <div>
+              <span className="section-label">SPECIAL GUEST</span>
+
+              <h2>
+                DON FLEXX
+                <br />
+                <em>IN MOTION.</em>
+              </h2>
+            </div>
+
+            <p>
+              Award-winning choreography.
+              <br />
+              Artistry, rhythm and movement.
+            </p>
+          </div>
+
+          <div className="favour-video-grid">
+            <div className="motion-video">
+              <video
+                src={donFlexxVideo01}
+                muted
+                loop
+                playsInline
+                controls
+                preload="metadata"
+              />
+            </div>
+
+            <div className="motion-video">
+              <video
+                src={donFlexxVideo02}
+                muted
+                loop
+                playsInline
+                controls
+                preload="metadata"
+              />
+            </div>
+
+            <div className="motion-video">
+              <video
+                src={donFlexxVideo03}
+                muted
+                loop
+                playsInline
+                controls
+                preload="metadata"
+              />
+            </div>
+          </div>
+        </section>
 
         {/* THE ROOM */}
 
         <section className="gallery-room">
-
           <div className="gallery-section-heading">
             <div>
               <span className="section-label">THE ROOM</span>
@@ -129,9 +177,7 @@ function GalleryPage() {
             </div>
           </div>
 
-
           <div className="gallery-photo-grid">
-
             <div className="gallery-photo gallery-photo-large">
               <img
                 src={dance01}
@@ -152,16 +198,12 @@ function GalleryPage() {
                 alt="Dance energy"
               />
             </div>
-
           </div>
-
         </section>
-
 
         {/* CTA */}
 
         <section className="gallery-page-cta">
-
           <span className="section-label">
             READY TO MOVE?
           </span>
@@ -175,7 +217,6 @@ function GalleryPage() {
           <a href="/booking" className="gallery-cta-button">
             Book Your Spot
           </a>
-
         </section>
 
       </main>
