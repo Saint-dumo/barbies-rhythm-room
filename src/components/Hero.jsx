@@ -41,7 +41,7 @@ function Hero() {
       </div>
 
       <div className="hero-event">
-        <span>OCT 22ND, 2026</span>
+        <span>OCT 23, 2026</span>
         <span>4:00 PM</span>
         <span>CANADA</span>
       </div>

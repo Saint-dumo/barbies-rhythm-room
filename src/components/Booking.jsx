@@ -134,7 +134,7 @@ const paymentLinks = {
                   {ticketLabels[ticketType]} × {quantity}
                 </span>
 
-                <strong>October 22, 2026</strong>
+                <strong>October 23, 2026</strong>
               </div>
 
               <div>
