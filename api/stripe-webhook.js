@@ -12,7 +12,7 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 
 const EVENT = {
   name: "Barbie's Rhythm Room",
-  date: 'Saturday, October 24, 2026',
+  date: 'Friday, October 23, 2026',
   time: '7:00 PM – 10:00 PM',
   address: '1377 The Queensway, Etobicoke, Toronto, ON',
   logo: 'https://www.barbiesrhythmroom.ca/barbiesroomlogo.png',
