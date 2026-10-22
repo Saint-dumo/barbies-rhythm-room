@@ -42,8 +42,8 @@ function Hero() {
 
       <div className="hero-event">
         <span>OCT 23, 2026</span>
-        <span>4:00 PM</span>
-        <span>CANADA</span>
+        <span>7:00 PM</span>
+        <span>TORONTO</span>
       </div>
 
     </section>

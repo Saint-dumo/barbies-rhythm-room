@@ -72,17 +72,17 @@ function Event() {
         <div className="event-details">
           <div className="event-detail">
             <span>TIME</span>
-            <strong>4:00 PM</strong>
+            <strong>7:00 PM</strong>
           </div>
 
           <div className="event-detail">
             <span>LOCATION</span>
-            <strong>VENUE TBA</strong>
+            <strong>1377 The Queensway, Etobicoke, Toronto, ON</strong>
           </div>
 
           <div className="event-detail">
             <span>DURATION</span>
-            <strong>2 HOURS</strong>
+            <strong>3 HOURS</strong>
           </div>
 
           <div className="event-detail">
